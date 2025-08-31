@@ -1,18 +1,13 @@
-# --- Reset everything to "countable code" by default ---
-* linguist-vendored=false
-* linguist-generated=false
-* linguist-documentation=false
-* linguist-detectable=true
+# Don’t count docs in language stats
+*.md linguist-documentation
+*.txt linguist-documentation
 
-# --- Force detection for the filetypes you actually use ---
-*.php  linguist-language=PHP        linguist-detectable=true
-*.html linguist-language=HTML       linguist-detectable=true
-*.js   linguist-language=JavaScript linguist-detectable=true
-*.py   linguist-language=Python     linguist-detectable=true
-*.xml  linguist-detectable=true
-
-# --- Exclude ONLY third-party + media from stats ---
+# Media and third-party libs (don’t count)
+media/** linguist-vendored
+vendor/** linguist-vendored
 canvasjs3.6/** linguist-vendored
-vendor/**      linguist-vendored
-screenshots/** linguist-documentation
-media/**       linguist-documentation
+
+# (Optional) mark your code as detectable
+*.php linguist-detectable=true
+*.html linguist-detectable=true
+*.py  linguist-detectable=true
