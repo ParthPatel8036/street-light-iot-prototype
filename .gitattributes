@@ -1,15 +1,15 @@
-# Exclude docs from language stats
-*.md   linguist-documentation
-*.txt  linguist-documentation
+# --- exclude only third-party/binary stuff from language stats
+/vendor/**                linguist-vendored
+/_vendor/**               linguist-vendored
+/canvasjs3.6/**           linguist-vendored
+/media/**                 linguist-vendored
+/screenshots/**           linguist-vendored
 
-# Exclude media and third-party libs
-media/**        linguist-vendored
-vendor/**       linguist-vendored
-_vendor/**      linguist-vendored
-canvasjs3.6/**  linguist-vendored
+# --- docs are docs (don’t remove code)
+/*.md                     linguist-documentation
 
-# Ensure our own code is counted
-*.php linguist-detectable=true
-*.html linguist-detectable=true
-*.py  linguist-detectable=true
-*.js  linguist-detectable=true
+# --- make sure our code is counted
+*.php   linguist-detectable=true
+*.html  linguist-detectable=true
+*.js    linguist-detectable=true
+*.py    linguist-detectable=true
