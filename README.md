@@ -45,27 +45,27 @@ _streetlight.py # Python test client to send readings
 
 ```mermaid
 flowchart LR
-  subgraph Device[ESP32/ESP8266 or Script]
-    A[LDR sensor] --> B[Client code]
-    B -->|HTTP GET ?lux=&state=| C[_recordtemp.php]
+  subgraph Device["ESP32/ESP8266 or Script"]
+    A["LDR sensor"] --> B["Client code"]
+    B -->|HTTP GET ?lux=&state=| C["_recordtemp.php"]
   end
 
-  subgraph Server[Apache + PHP]
-    C --> D[( _log.xml )]
-    E[_log_data.php] --> D
-    F[_convertXMLtoJSON.php] -. reads/writes .-> D
-    G[_displaytemp.php] --> D
-    H[_view_log.php] --> D
-    I[_graph.php] --> D
+  subgraph Server["Apache + PHP"]
+    C --> D[[" _log.xml "]]
+    E["_log_data.php"] --> D
+    F["_convertXMLtoJSON.php"] -. reads/writes .-> D
+    G["_displaytemp.php"] --> D
+    H["_view_log.php"] --> D
+    I["_graph.php"] --> D
   end
 
-  subgraph UI[Browser]
-    J[_index.html (CanvasJS)]
+  subgraph UI["Browser"]
+    J["index.html (CanvasJS)"]
     J -->|AJAX| G
     J -->|AJAX| H
     J -->|AJAX| I
   end
-```
+
 ▶️ Run locally (XAMPP on Windows)
 
 Install XAMPP, start Apache.
