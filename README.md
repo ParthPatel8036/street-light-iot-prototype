@@ -66,6 +66,7 @@ flowchart LR
     J -->|AJAX| I
   end
 
+
 ▶️ Run locally (XAMPP on Windows)
 
 Install XAMPP, start Apache.
