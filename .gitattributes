@@ -1,11 +1,18 @@
-# --- Reset: treat everything as normal code by default ---
+# --- Reset everything to "countable code" by default ---
 * linguist-vendored=false
 * linguist-generated=false
 * linguist-documentation=false
+* linguist-detectable=true
 
-# --- Only exclude 3rd-party libs and media from language stats ---
+# --- Force detection for the filetypes you actually use ---
+*.php  linguist-language=PHP        linguist-detectable=true
+*.html linguist-language=HTML       linguist-detectable=true
+*.js   linguist-language=JavaScript linguist-detectable=true
+*.py   linguist-language=Python     linguist-detectable=true
+*.xml  linguist-detectable=true
+
+# --- Exclude ONLY third-party + media from stats ---
 canvasjs3.6/** linguist-vendored
 vendor/**      linguist-vendored
-
 screenshots/** linguist-documentation
 media/**       linguist-documentation
