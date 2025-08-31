@@ -1,15 +1,15 @@
-# ---- Tell Linguist what to count (and what to ignore) ----
+# ---- Count real code, ignore docs/assets/vendor in Linguist ----
 
-# Count these as code (force detection if needed)
+# Force detection if needed (optional; remove if auto-detection is fine)
 *.php linguist-language=PHP
 *.html linguist-language=HTML
 *.js   linguist-language=JavaScript
 *.py   linguist-language=Python
 
-# Don’t let Markdown dominate the bar
+# Don’t let docs dominate
 *.md linguist-documentation
 
-# Ignore third-party libs & media in language stats
+# Exclude third-party libs and assets from stats
 canvasjs3.6/** linguist-vendored
 _vendor/**      linguist-vendored
 media/**        linguist-documentation
