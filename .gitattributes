@@ -1,13 +1,11 @@
-# 3rd-party libs → don’t dominate stats
+# --- Reset: treat everything as normal code by default ---
+* linguist-vendored=false
+* linguist-generated=false
+* linguist-documentation=false
+
+# --- Only exclude 3rd-party libs and media from language stats ---
 canvasjs3.6/** linguist-vendored
 vendor/**      linguist-vendored
 
-# Count our actual code
-*.php  linguist-detectable
-*.html linguist-detectable
-*.js   linguist-detectable
-*.py   linguist-detectable
-
-# Media/docs → don’t count toward languages
 screenshots/** linguist-documentation
 media/**       linguist-documentation
