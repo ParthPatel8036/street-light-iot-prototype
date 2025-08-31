@@ -1,11 +1,6 @@
-# Exclude third-party libs from language stats
-canvasjs3.6/** linguist-vendored
+﻿canvasjs3.6/** linguist-vendored
 vendor/**      linguist-vendored
-
-# Don’t count generated/minified files
 *.min.js       linguist-generated
 *.map          linguist-generated
-
-# Don’t count docs/media
 screenshots/** linguist-documentation
 media/**       linguist-documentation
