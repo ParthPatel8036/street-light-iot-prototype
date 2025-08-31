@@ -65,7 +65,7 @@ flowchart LR
     J -->|AJAX| H
     J -->|AJAX| I
   end
-
+```
 
 ▶️ Run locally (XAMPP on Windows)
 
