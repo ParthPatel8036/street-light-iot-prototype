@@ -1,0 +1,34 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temp / caches
+*.log
+*.tmp
+*.bak
+*_log.xml
+temp/
+tmp/
+cache/
+
+# Build artifacts
+dist/
+build/
+out/
+
+# PHP / Composer
+vendor/
+composer.lock
+
+# Python (for .streetlight.py or helpers)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+secrets.*
+config.local.php
