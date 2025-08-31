@@ -1,6 +1,13 @@
+# 3rd-party libs → don’t dominate stats
 canvasjs3.6/** linguist-vendored
 vendor/**      linguist-vendored
-*.min.js       linguist-generated
-*.map          linguist-generated
+
+# Count our actual code
+*.php  linguist-detectable
+*.html linguist-detectable
+*.js   linguist-detectable
+*.py   linguist-detectable
+
+# Media/docs → don’t count toward languages
 screenshots/** linguist-documentation
 media/**       linguist-documentation
