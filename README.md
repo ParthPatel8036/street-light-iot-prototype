@@ -113,9 +113,27 @@ state → ON | OFF (optional)
 | `_convertXMLtoJSON.php` | GET    | –                                   | Utility to produce JSON from XML. |
 | `_log_data.php`         | GET    | internal                            | Helper used by other scripts.     |
 
-🖼 Screenshots & 🎥 Demo
+🖼 Screenshots
 
-Add media later and they’ll render here automatically:
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/main.png" width="420" alt="Main dashboard"/>
+      <div><sub>screenshots/main.png</sub></div>
+    </td>
+    <td align="center">
+      <img src="screenshots/table_graph.png" width="420" alt="Table + graph view"/>
+      <div><sub>screenshots/table_graph.png</sub></div>
+    </td>
+  </tr>
+</table>
+
+---
+🎥 Demo Video
+
+<video src="media/demo.mp4" width="720" controls poster="screenshots/main.png"></video>
+
+If the inline player doesn’t show in your browser, view/download directly: **[media/demo.mp4](media/demo.mp4)**.
 
 
 🔒 Security
