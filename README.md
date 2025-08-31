@@ -161,6 +161,11 @@ Ignore logs & temp files in git.
 Issues/PRs welcome. Keep endpoints small and documented.
 📄 License
 
+![Top language](https://img.shields.io/github/languages/top/ParthPatel8036/street-light-iot-prototype)
+![Language count](https://img.shields.io/github/languages/count/ParthPatel8036/street-light-iot-prototype)
+![Code size](https://img.shields.io/github/languages/code-size/ParthPatel8036/street-light-iot-prototype)
+
+
 MIT – see LICENSE
 . CanvasJS remains © its authors (check their terms for redistribution).
 
