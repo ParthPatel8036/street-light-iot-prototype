@@ -1,15 +1,16 @@
-# --- exclude only third-party/binary stuff from language stats
-/vendor/**                linguist-vendored
-/_vendor/**               linguist-vendored
-/canvasjs3.6/**           linguist-vendored
-/media/**                 linguist-vendored
-/screenshots/**           linguist-vendored
+# ---- Tell Linguist what to count (and what to ignore) ----
 
-# --- docs are docs (don’t remove code)
-/*.md                     linguist-documentation
+# Count these as code (force detection if needed)
+*.php linguist-language=PHP
+*.html linguist-language=HTML
+*.js   linguist-language=JavaScript
+*.py   linguist-language=Python
 
-# --- make sure our code is counted
-*.php   linguist-detectable=true
-*.html  linguist-detectable=true
-*.js    linguist-detectable=true
-*.py    linguist-detectable=true
+# Don’t let Markdown dominate the bar
+*.md linguist-documentation
+
+# Ignore third-party libs & media in language stats
+canvasjs3.6/** linguist-vendored
+_vendor/**      linguist-vendored
+media/**        linguist-documentation
+screenshots/**  linguist-documentation
